@@ -1,0 +1,15 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { nodePolyfills } from 'vite-plugin-node-polyfills'; // Bu satırı ekle
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 3000
+  },
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+    sourcemap: false
+  }
+})

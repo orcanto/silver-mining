@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Senin Gönderdiğin Özel Tasarım Kodları (Düzeltildi) --- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #020617;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* PC/Tablet ekranlarında oyunu ortalar */
+  min-height: 100vh;
+  overflow: hidden;
+  color: white; /* Yazıların varsayılan rengi beyaz olsun */
+}
+
+#root {
+  width: 100%;
+  max-width: 480px; /* Telefon görünümü için genişlik sınırı */
+  height: 100vh;
+  max-height: 1000px;
+  position: relative;
+  background: #050b1d;
+  box-shadow: 0 0 100px rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 500px) {
+  #root {
+    border-left: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+  }
+}
+
+.font-tech {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes pulse-neon {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-pulse-neon {
+  animation: pulse-neon 2s infinite ease-in-out;
+}
+
+/* Sayı girişlerindeki okları gizle */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* IOS Safari zoom engelleme */
+input {
+  font-size: 16px !important;
+}
