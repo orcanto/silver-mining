@@ -70,7 +70,7 @@ const AppContent: React.FC = () => {
       energyPool: formatFloor(targetState.energyPool),
       totalSrgEarned: formatFloor(targetState.totalSrgEarned),
       
-      // Tam sayı olması gerekenler
+      // Tam sayı olması gerekenler333333
       silverBalance: Math.floor(targetState.silverBalance || 0),
       goldBalance: Math.floor(targetState.goldBalance || 0),
       
