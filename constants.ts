@@ -204,8 +204,6 @@ export const INITIAL_STATE: GameState = {
   totalEarned: 0,
   clickPower: 1,
   upgrades: {},
-  
-  referredBy: "",
 
   energyPool: 20, maxEnergyPool: 1000, hourlyGeneration: 0, hourlyConsumption: 0,
   // --- KRİTİK DEĞİŞİKLİK ---
